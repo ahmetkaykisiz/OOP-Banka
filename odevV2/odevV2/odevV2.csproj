@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6ADEB280-C997-463C-A76F-5EA59E17236C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>odevV2</RootNamespace>
+    <AssemblyName>odevV2</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Banka.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Hesap.cs" />
+    <Compile Include="Islem.cs" />
+    <Compile Include="Musteri.cs" />
+    <Compile Include="musteriHavale.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="musteriHavale.Designer.cs">
+      <DependentUpon>musteriHavale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="musteriHesapAc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="musteriHesapAc.Designer.cs">
+      <DependentUpon>musteriHesapAc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="musteriHesapKapama.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="musteriHesapKapama.Designer.cs">
+      <DependentUpon>musteriHesapKapama.cs</DependentUpon>
+    </Compile>
+    <Compile Include="musteriHesapOzet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="musteriHesapOzet.Designer.cs">
+      <DependentUpon>musteriHesapOzet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="musteriPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="musteriPanel.Designer.cs">
+      <DependentUpon>musteriPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="musteriParaCekme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="musteriParaCekme.Designer.cs">
+      <DependentUpon>musteriParaCekme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="musteriParaYatirma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="musteriParaYatirma.Designer.cs">
+      <DependentUpon>musteriParaYatirma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="personelPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="personelPanel.Designer.cs">
+      <DependentUpon>personelPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="personelPanelAc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="personelPanelAc.Designer.cs">
+      <DependentUpon>personelPanelAc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="personelPanelEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="personelPanelEkle.Designer.cs">
+      <DependentUpon>personelPanelEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="personelPanelRapor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="personelPanelRapor.Designer.cs">
+      <DependentUpon>personelPanelRapor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="musteriHavale.resx">
+      <DependentUpon>musteriHavale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="musteriHesapAc.resx">
+      <DependentUpon>musteriHesapAc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="musteriHesapKapama.resx">
+      <DependentUpon>musteriHesapKapama.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="musteriHesapOzet.resx">
+      <DependentUpon>musteriHesapOzet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="musteriPanel.resx">
+      <DependentUpon>musteriPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="musteriParaCekme.resx">
+      <DependentUpon>musteriParaCekme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="musteriParaYatirma.resx">
+      <DependentUpon>musteriParaYatirma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="personelPanel.resx">
+      <DependentUpon>personelPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="personelPanelAc.resx">
+      <DependentUpon>personelPanelAc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="personelPanelEkle.resx">
+      <DependentUpon>personelPanelEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="personelPanelRapor.resx">
+      <DependentUpon>personelPanelRapor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
